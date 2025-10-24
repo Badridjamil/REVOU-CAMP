@@ -190,7 +190,7 @@ table tr:nth-child(even) {
 
 table tr:hover {
   background-color: #e3f2fd;
-}
+} 
 
 /* Tombol hapus di tabel */
 .action-btn {
