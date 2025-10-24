@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Perusahaan</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <header>
+  <div class="logo">
+    <img src="https://picsum.photos/200/300.jpg" alt="Logo" />
+    <h1>Success Smart Company</h1>
+  </div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#profile">My Profile</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Message Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <main>
+    <div class="container">
+      <section class="about card">
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah perusahaan teknologi yang menyediakan solusi digital inovatif untuk bisnis dan organisasi.</p>
+      </section>
+<br>
+      <section class="services card">
+        <h2>Layanan Kami</h2>
+        <ul>
+          <li>Pengembangan Website & Aplikasi</li>
+          <li>Desain UI/UX</li>
+          <li>Sistem Informasi & Otomasi</li>
+          <li>Konsultasi Teknologi Digital</li>
+        </ul>
+      </section>
+<br>
+      <!-- Kontainer dua kolom -->
+      <div class="main-content">
+        <!-- Kiri: Form -->
+        <div class="card">
+          <h2>Hubungi Kami</h2>
+          <form id="contactForm">
+            <div class="form-row">
+              <label>Nama Lengkap</label>
+              <input type="text" id="name">
+              <div class="error" id="nameError"></div>
+            </div>
+            <div class="form-row">
+              <label>Email</label>
+              <input type="email" id="email">
+              <div class="error" id="emailError"></div>
+            </div>
+            <div class="form-row">
+              <label>Nomor Telepon</label>
+              <input type="text" id="phone">
+              <div class="error" id="phoneError"></div>
+            </div>
+            <div class="form-row">
+              <label>Pesan</label>
+              <textarea id="message" rows="4"></textarea>
+              <div class="error" id="messageError"></div>
+            </div>
+            <button type="submit">Kirim</button>
+            <div class="success" id="successMessage"></div>
+          </form>
+        </div>
+
+        <!-- Kanan: Hasil pesan -->
+        <!-- <div class="card">
+          <h2>Data Pesan Masuk</h2>
+          <ul id="dataList">
+            <li>Belum ada pesan terkirim.</li>
+          </ul>
+        </div> -->
+        <div class="card">
+  <h2>Data Pesan Masuk</h2>
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Email</th>
+        <th>No. Telepon</th>
+        <th>Pesan</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="5" style="text-align:center;">Belum ada pesan terkirim.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">&copy; 2025 Success Smart Company</div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
